@@ -1,0 +1,339 @@
+
+/* ---- BODY ---- */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+     
+}
+
+.lordicon{
+    width: 70px;
+    height: 70px;
+}
+
+.presentation{
+    opacity: 0;
+
+}
+
+.presentation h1{
+    color: white;
+   
+    
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "div1 div2 div3";
+  }
+  .div1 { grid-area: div1; }
+  .div2 { grid-area: div2; text-align: center;}
+  .div3 { grid-area: div3;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; }
+
+.div3 button{
+    background: black;
+    
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.div3 button a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.fa-user-circle{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* ---- POSITION DU LOGO ---- */
+
+.user h1{
+    color: white;
+}
+
+
+
+.btn-co{
+    color: red;
+}
+
+
+h1{
+    color: white;
+}
+
+/* ---- POSITION DE LA PRESENTATION ---- */
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* ---- STYLE DE LA PRESENTATION ---- */
+
+.presentation h1{
+    border: 10px solid orange;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 15px;
+   
+}
+
+
+.car-svg img{
+    width: 90px;
+}
+
+.mes-creations{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.mes-creations h1{
+    border: 10px solid orange;
+    text-align: center;
+    font-size: 2rem;
+    width: 30vw;
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+} 
+
+
+h2{
+    color: white;
+}
+
+.imgclass{
+    margin-bottom: 200px;
+}
+
+
+
+
+.containera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* ---- CONFIGURE LE CONTOUR DE LA CARD---- */
+
+.containera .carda{
+
+    width: 250px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    margin: 40px 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+  
+   
+}
+
+
+
+/* ---- CONFIGURE L'INTERIEUR DE LA CARD---- */
+
+.containera .carda .contenta{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+/* ---- CONFIGURE L'ANIMATION DE LA CARD AVEC LA MONTEE ET L'OPACITE---- */
+
+.containera .carda:hover .contenta{
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+/* ---- CONFIGURE LES IMAGES ET LA BORDURE---- */
+
+.containera .carda .contenta .imgArt{
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.35);
+
+}
+
+.containera .carda .contenta .imgArt img{
+
+ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---- CONFIGURE LE NOM DE L'ARTISTE---- */
+
+.containera .carda .contenta .contentaArt h3{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+/* ---- CONFIGURE LE STYLE DE MUSIQUE---- */
+
+.containera .carda .contenta .contentaArt h3 span{
+
+
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+
+
+
+
+/* ------- RACCOURCI ------- */
+
+
+.flex{
+    display: flex;
+}
+
+
+.justifyC{
+    justify-content: center;
+}
+
+.justifySA{
+    justify-content: space-around;
+}
+
+.justifySB{
+    justify-content: space-between;
+}
+
+.alignC{
+    align-items: center;
+}
+
+.flexDC{
+    flex-direction: column;
+}
+
+.borderb{
+    border: 2px solid black;
+}
+
+.sise{
+    height: auto;
+    width: 100vw;
+    
+}
+
+.flexEn{
+    justify-content: flex-end;
+}
+
+
+
+
+@media only screen and (max-width:580px) { 
+
+
+	.logo img{
+        width: 200px;
+    }
+    .lordicon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .presentation h1{
+        
+        width: 70%;
+        padding: 5px;
+        font-size: 14px;
+        border: 2px solid orange;
+    }
+
+    .mes-creations h1{
+        width: 70%;
+        padding: 5px;
+        font-size: 14px;
+        border: 2px solid orange;
+    }
+
+    .containera .carda {
+        width: 600px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.15);
+        margin: 40px 50px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        opacity: 1;
+    }
+
+    .containera .carda .contenta .contentaArt h3 {
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size: 15px;
+        text-align: center;
+        margin: 20px 0 10px;
+        line-height: 1.1em;
+    }
+
+    .containera .carda .contenta .imgArt {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 10px solid rgba(0, 0, 0, 0.35);
+    }
+
+    
+}
+
+
+

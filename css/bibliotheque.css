@@ -1,0 +1,182 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.logo img{
+    width: 500px;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "div1 div2 div3";
+      
+  }
+  .div1 { 
+    grid-area: div1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+  .div2 { 
+    grid-area: div2; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+  .div3 { 
+grid-area: div3;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; 
+}
+
+
+.div3 button{
+    background: black;
+    
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.div3 button a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.favoris-filtre h2{
+    color: white;
+}
+
+.containera{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.containera .carda{
+    position: relative;
+    width: 250px;
+    
+    background: rgba(255, 255, 255, 0.15);
+    margin: 40px 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+   
+    backdrop-filter: blur(10px);
+    opacity: 1;
+   
+}
+
+
+
+
+
+/* ---- CONFIGURE L'INTERIEUR DE LA CARD---- */
+
+.containera .carda .contenta{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.containera .carda .contenta:hover{
+    opacity: 1;
+}
+
+
+/* ---- CONFIGURE L'ANIMATION DE LA CARD AVEC LA MONTEE ET L'OPACITE---- */
+
+
+
+/* ---- CONFIGURE LES IMAGES ET LA BORDURE---- */
+
+.containera .carda .contenta .imgArt{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.35);
+    margin: 10px 0;
+
+}
+
+.containera .carda .contenta .imgArt img{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---- CONFIGURE LE NOM DE L'ARTISTE---- */
+
+.containera .carda .contenta .contentaArt h3{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.containera .carda .contenta .contentaArt h4{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+}
+
+/* ---- CONFIGURE LE STYLE DE MUSIQUE---- */
+
+.containera .carda .contenta .contentaArt h3 span{
+
+
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: initial;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.fa-heart{
+    font-size: 20px;
+    cursor: pointer;
+    color: green;
+}
+
+.liked{
+    color: red;
+}

@@ -1,0 +1,100 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar{
+    margin-bottom: 50px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 25px;
+}
+
+.nav-link:hover{
+    color: orangered;
+}
+
+/* #navbarNav{
+    display: flex;
+    justify-content: space-around;
+   
+} */
+
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+   
+}
+
+.navbar-toggler{
+    border: 3px solid white;
+    background: white;
+}
+
+.descriptionSite{
+    margin: 50px 0;
+}
+
+.inspiration-site{
+    margin: 0 20px;
+}
+
+.inspiration-site h1{
+    font-size: 30px;
+}
+
+.inspiration-site .buttonLink{
+    font-size: 20px;
+    background: black;
+    color: white;
+    border: 5px solid white;  
+    padding: 10px;  
+}
+
+@media only screen and (max-width:992px) {
+	.navbar-nav{
+        border: none;
+    }
+
+    .logo a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:450px){
+    article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    article img{
+        width: 80%;
+
+    }
+
+    article p{
+font-size: 14px;
+    }
+}
+

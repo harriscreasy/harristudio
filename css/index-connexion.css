@@ -1,0 +1,106 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: black;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+h2{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+.form-group input{
+
+    background: black;
+    color: white;
+   
+ border: 5px solid white;
+    margin: 15px 0;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+  
+  input:required:valid {
+    border-color: forestgreen;
+  }
+  
+  input:required:invalid:not(:placeholder-shown) {
+    border-color: crimson;
+  }
+  
+  input:required:invalid:not(:placeholder-shown){
+    opacity: 1;
+  }
+
+.form-group input::placeholder{
+    color: white;
+}
+
+.form-group input:focus{
+    outline: none;
+}
+
+button{
+    color: white;
+    background: black;
+    font-size: 20px;
+    padding: 15px 40px;   
+    border: 2px solid white;
+    cursor: pointer;
+    
+}
+
+.inscription-link, .connexion-link
+{
+    display: flex; 
+    justify-content: center;
+    
+    margin: 20px 0;
+}
+
+.password-show{
+    display: none;
+}
+
+.none-show{
+    display: none;
+}
+
+.show-none{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+.flex{
+    display: flex;
+}
